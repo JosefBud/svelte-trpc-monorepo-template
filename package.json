@@ -1,0 +1,29 @@
+{
+  "name": "svelte-trpc-monorepo",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start:dev": "nx run-many --output-style stream --parallel=20 -t start:dev -p api web",
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "@nx/vite": "20.0.5",
+    "@nx/web": "20.0.5",
+    "@types/bun": "latest",
+    "@vitest/ui": "^2.1.3",
+    "nx": "20.0.5",
+    "oxlint": "^0.13.2",
+    "prettier": "^3.4.1",
+    "prettier-plugin-svelte": "^3.3.2",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "nx": {}
+}

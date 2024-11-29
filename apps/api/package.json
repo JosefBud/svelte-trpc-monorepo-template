@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "module": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "start:dev": "bun src/main.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.68.6",
+    "@effect/platform-bun": "^0.48.6",
+    "@effect/rpc": "^0.43.5",
+    "@effect/rpc-http": "^0.41.5",
+    "@effect/schema": "^0.75.5",
+    "@trpc/server": "^10.45.2",
+    "effect": "^3.9.2",
+    "express": "^4.21.1"
+  }
+}
